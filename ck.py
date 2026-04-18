@@ -17,11 +17,14 @@ def rebirth():
     global multi
     global quant
     global autoc_at
+    global autocp
     if cont >= quant:
         cont = 0
         multi += 2.25
         quant += 100
         autoc_at = False
+        autocp = 10
+        btn3.config(text=f"Autoclick(10 cliques necessários)")
         label.config(text="0")
         btn2.config(text=f"Rebirth({quant} cliques necessários)")
 
